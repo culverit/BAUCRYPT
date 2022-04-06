@@ -1,0 +1,40 @@
+ClrText
+"POLYNOM INTERPOLANT  OF 8 POINTS"
+{8,8}->Dim Mat X
+{8,1}->Dim Mat Y
+"\gX1"?->A:A^7->Mat X[1,1]:A^6->Mat X[1,2]:A^5->Mat X[1,3]:A^4->Mat X[1,4]:A^3->Mat X[1,5]:A^2->Mat X[1,6]:A^1->Mat X[1,7]:1->Mat X[1,8]
+"\gY1"?->A:A->Mat Y[1,1]
+"\gX2"?->A:A^7->Mat X[2,1]:A^6->Mat X[2,2]:A^5->Mat X[2,3]:A^4->Mat X[2,4]:A^3->Mat X[2,5]:A^2->Mat X[2,6]:A^1->Mat X[2,7]:1->Mat X[2,8]
+"\gY2"?->A:A->Mat Y[2,1]
+"\gX3"?->A:A^7->Mat X[3,1]:A^6->Mat X[3,2]:A^5->Mat X[3,3]:A^4->Mat X[3,4]:A^3->Mat X[3,5]:A^2->Mat X[3,6]:A^1->Mat X[3,7]:1->Mat X[3,8]
+"\gY3"?->A:A->Mat Y[3,1]
+"\gX4"?->A:A^7->Mat X[4,1]:A^6->Mat X[4,2]:A^5->Mat X[4,3]:A^4->Mat X[4,4]:A^3->Mat X[4,5]:A^2->Mat X[4,6]:A^1->Mat X[4,7]:1->Mat X[4,8]
+"\gY4"?->A:A->Mat Y[4,1]
+"\gX5"?->A:A^7->Mat X[5,1]:A^6->Mat X[5,2]:A^5->Mat X[5,3]:A^4->Mat X[5,4]:A^3->Mat X[5,5]:A^2->Mat X[5,6]:A^1->Mat X[5,7]:1->Mat X[5,8]
+"\gY5"?->A:A->Mat Y[5,1]
+"\gX6"?->A:A^7->Mat X[6,1]:A^6->Mat X[6,2]:A^5->Mat X[6,3]:A^4->Mat X[6,4]:A^3->Mat X[6,5]:A^2->Mat X[6,6]:A^1->Mat X[6,7]:1->Mat X[6,8]
+"\gY6"?->A:A->Mat Y[6,1]
+"\gX7"?->A:A^7->Mat X[7,1]:A^6->Mat X[7,2]:A^5->Mat X[7,3]:A^4->Mat X[7,4]:A^3->Mat X[7,5]:A^2->Mat X[7,6]:A^1->Mat X[7,7]:1->Mat X[7,8]
+"\gY7"?->A:A->Mat Y[7,1]
+"\gX8"?->A:A^7->Mat X[8,1]:A^6->Mat X[8,2]:A^5->Mat X[8,3]:A^4->Mat X[8,4]:A^3->Mat X[8,5]:A^2->Mat X[8,6]:A^1->Mat X[8,7]:1->Mat X[8,8]
+"\gY8"?->A:A->Mat Y[8,1]
+Mat X^-1*Mat Y->Mat Z
+Mat Z[1,1]->A
+Mat Z[2,1]->B
+Mat Z[3,1]->C
+Mat Z[4,1]->D
+Mat Z[5,1]->E
+Mat Z[6,1]->F
+Mat Z[7,1]->G
+Mat Z[8,1]->H
+ClrText
+"FORM:                aX^7+bX^6+cX^5+dX^4+ eX^3+fX^2+gX+h"
+"a=":A_
+"b=":B_
+"c=":C_
+"d=":D_
+"e=":E_
+"f=":F_
+"g=":G_
+"h=":H_
+Graph Y=AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H_

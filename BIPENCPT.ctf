@@ -1,0 +1,98 @@
+1->A:2->B:3->C:4->D:5->E:6->F:7->G:8->H:9->I:10->J:11->K:12->L:13->M:14->N:15->O:16->P:17->Q:18->R:19->S:20->T:21->U:22->V:23->W:24->X:25->Y:26->Z
+ClrText
+Menu "INPUT TYPE","SINGLE LETTER",8,"STRING {}",9
+Lbl 8
+"POLYNOMIAL ENCRYPTIONOF 10 LETTERS"
+{10,10}->Dim Mat X
+{10,1}->Dim Mat Y
+1->\r:\r^9->Mat X[1,1]:\r^8->Mat X[1,2]:\r^7->Mat X[1,3]:\r^6->Mat X[1,4]:\r^5->Mat X[1,5]:\r^4->Mat X[1,6]:\r^3->Mat X[1,7]:\r^2->Mat X[1,8]:\r^1->Mat X[1,9]:1->Mat X[1,10]
+"FIRST LETTER"?->\r:\r->Mat Y[1,1]
+2->\r:\r^9->Mat X[2,1]:\r^8->Mat X[2,2]:\r^7->Mat X[2,3]:\r^6->Mat X[2,4]:\r^5->Mat X[2,5]:\r^4->Mat X[2,6]:\r^3->Mat X[2,7]:\r^2->Mat X[2,8]:\r^1->Mat X[2,9]:1->Mat X[2,10]
+"SECOND LETTER"?->\r:\r->Mat Y[2,1]
+3->\r:\r^9->Mat X[3,1]:\r^8->Mat X[3,2]:\r^7->Mat X[3,3]:\r^6->Mat X[3,4]:\r^5->Mat X[3,5]:\r^4->Mat X[3,6]:\r^3->Mat X[3,7]:\r^2->Mat X[3,8]:\r^1->Mat X[3,9]:1->Mat X[3,10]
+"THIRD LETTER"?->\r:\r->Mat Y[3,1]
+4->\r:\r^9->Mat X[4,1]:\r^8->Mat X[4,2]:\r^7->Mat X[4,3]:\r^6->Mat X[4,4]:\r^5->Mat X[4,5]:\r^4->Mat X[4,6]:\r^3->Mat X[4,7]:\r^2->Mat X[4,8]:\r^1->Mat X[4,9]:1->Mat X[4,10]
+"FOURTH LETTER"?->\r:\r->Mat Y[4,1]
+5->\r:\r^9->Mat X[5,1]:\r^8->Mat X[5,2]:\r^7->Mat X[5,3]:\r^6->Mat X[5,4]:\r^5->Mat X[5,5]:\r^4->Mat X[5,6]:\r^3->Mat X[5,7]:\r^2->Mat X[5,8]:\r^1->Mat X[5,9]:1->Mat X[5,10]
+"FIFTH LETTER"?->\r:\r->Mat Y[5,1]
+6->\r:\r^9->Mat X[6,1]:\r^8->Mat X[6,2]:\r^7->Mat X[6,3]:\r^6->Mat X[6,4]:\r^5->Mat X[6,5]:\r^4->Mat X[6,6]:\r^3->Mat X[6,7]:\r^2->Mat X[6,8]:\r^1->Mat X[6,9]:1->Mat X[6,10]
+"SIXTH LETTER"?->\r:\r->Mat Y[6,1]
+7->\r:\r^9->Mat X[7,1]:\r^8->Mat X[7,2]:\r^7->Mat X[7,3]:\r^6->Mat X[7,4]:\r^5->Mat X[7,5]:\r^4->Mat X[7,6]:\r^3->Mat X[7,7]:\r^2->Mat X[7,8]:\r^1->Mat X[7,9]:1->Mat X[7,10]
+"SEVENTH LETTER"?->\r:\r->Mat Y[7,1]
+8->\r:\r^9->Mat X[8,1]:\r^8->Mat X[8,2]:\r^7->Mat X[8,3]:\r^6->Mat X[8,4]:\r^5->Mat X[8,5]:\r^4->Mat X[8,6]:\r^3->Mat X[8,7]:\r^2->Mat X[8,8]:\r^1->Mat X[8,9]:1->Mat X[8,10]
+"EIGHTH LETTER"?->\r:\r->Mat Y[8,1]
+9->\r:\r^9->Mat X[9,1]:\r^8->Mat X[9,2]:\r^7->Mat X[9,3]:\r^6->Mat X[9,4]:\r^5->Mat X[9,5]:\r^4->Mat X[9,6]:\r^3->Mat X[9,7]:\r^2->Mat X[9,8]:\r^1->Mat X[9,9]:1->Mat X[9,10]
+"NINTH LETTER"?->\r:\r->Mat Y[9,1]
+10->\r:\r^9->Mat X[10,1]:\r^8->Mat X[10,2]:\r^7->Mat X[10,3]:\r^6->Mat X[10,4]:\r^5->Mat X[10,5]:\r^4->Mat X[10,6]:\r^3->Mat X[10,7]:\r^2->Mat X[10,8]:\r^1->Mat X[10,9]:1->Mat X[10,10]
+"TENTH LETTER"?->\r:\r->Mat Y[10,1]
+Goto 7
+Lbl 9
+ClrText
+"POLYNOMIAL ENCRYPTIONOF 10 LETTERS"
+{10,10}->Dim Mat X
+{10,1}->Dim Mat Y
+"MESSAGE {}"?->List 1
+1->\r:\r^9->Mat X[1,1]:\r^8->Mat X[1,2]:\r^7->Mat X[1,3]:\r^6->Mat X[1,4]:\r^5->Mat X[1,5]:\r^4->Mat X[1,6]:\r^3->Mat X[1,7]:\r^2->Mat X[1,8]:\r^1->Mat X[1,9]:1->Mat X[1,10]
+List 1[1]->\r:\r->Mat Y[1,1]
+2->\r:\r^9->Mat X[2,1]:\r^8->Mat X[2,2]:\r^7->Mat X[2,3]:\r^6->Mat X[2,4]:\r^5->Mat X[2,5]:\r^4->Mat X[2,6]:\r^3->Mat X[2,7]:\r^2->Mat X[2,8]:\r^1->Mat X[2,9]:1->Mat X[2,10]
+List 1[2]->\r:\r->Mat Y[2,1]
+3->\r:\r^9->Mat X[3,1]:\r^8->Mat X[3,2]:\r^7->Mat X[3,3]:\r^6->Mat X[3,4]:\r^5->Mat X[3,5]:\r^4->Mat X[3,6]:\r^3->Mat X[3,7]:\r^2->Mat X[3,8]:\r^1->Mat X[3,9]:1->Mat X[3,10]
+List 1[3]->\r:\r->Mat Y[3,1]
+4->\r:\r^9->Mat X[4,1]:\r^8->Mat X[4,2]:\r^7->Mat X[4,3]:\r^6->Mat X[4,4]:\r^5->Mat X[4,5]:\r^4->Mat X[4,6]:\r^3->Mat X[4,7]:\r^2->Mat X[4,8]:\r^1->Mat X[4,9]:1->Mat X[4,10]
+List 1[4]->\r:\r->Mat Y[4,1]
+5->\r:\r^9->Mat X[5,1]:\r^8->Mat X[5,2]:\r^7->Mat X[5,3]:\r^6->Mat X[5,4]:\r^5->Mat X[5,5]:\r^4->Mat X[5,6]:\r^3->Mat X[5,7]:\r^2->Mat X[5,8]:\r^1->Mat X[5,9]:1->Mat X[5,10]
+List 1[5]->\r:\r->Mat Y[5,1]
+6->\r:\r^9->Mat X[6,1]:\r^8->Mat X[6,2]:\r^7->Mat X[6,3]:\r^6->Mat X[6,4]:\r^5->Mat X[6,5]:\r^4->Mat X[6,6]:\r^3->Mat X[6,7]:\r^2->Mat X[6,8]:\r^1->Mat X[6,9]:1->Mat X[6,10]
+List 1[6]->\r:\r->Mat Y[6,1]
+7->\r:\r^9->Mat X[7,1]:\r^8->Mat X[7,2]:\r^7->Mat X[7,3]:\r^6->Mat X[7,4]:\r^5->Mat X[7,5]:\r^4->Mat X[7,6]:\r^3->Mat X[7,7]:\r^2->Mat X[7,8]:\r^1->Mat X[7,9]:1->Mat X[7,10]
+List 1[7]->\r:\r->Mat Y[7,1]
+8->\r:\r^9->Mat X[8,1]:\r^8->Mat X[8,2]:\r^7->Mat X[8,3]:\r^6->Mat X[8,4]:\r^5->Mat X[8,5]:\r^4->Mat X[8,6]:\r^3->Mat X[8,7]:\r^2->Mat X[8,8]:\r^1->Mat X[8,9]:1->Mat X[8,10]
+List 1[8]->\r:\r->Mat Y[8,1]
+9->\r:\r^9->Mat X[9,1]:\r^8->Mat X[9,2]:\r^7->Mat X[9,3]:\r^6->Mat X[9,4]:\r^5->Mat X[9,5]:\r^4->Mat X[9,6]:\r^3->Mat X[9,7]:\r^2->Mat X[9,8]:\r^1->Mat X[9,9]:1->Mat X[9,10]
+List 1[9]->\r:\r->Mat Y[9,1]
+10->\r:\r^9->Mat X[10,1]:\r^8->Mat X[10,2]:\r^7->Mat X[10,3]:\r^6->Mat X[10,4]:\r^5->Mat X[10,5]:\r^4->Mat X[10,6]:\r^3->Mat X[10,7]:\r^2->Mat X[10,8]:\r^1->Mat X[10,9]:1->Mat X[10,10]
+List 1[10]->\r:\r->Mat Y[10,1]
+Goto 7
+Lbl 7
+Mat X^-1*Mat Y->Mat Z
+Mat Z[1,1]->A
+Mat Z[2,1]->B
+Mat Z[3,1]->C
+Mat Z[4,1]->D
+Mat Z[5,1]->E
+Mat Z[6,1]->F
+Mat Z[7,1]->G
+Mat Z[8,1]->H
+Mat Z[9,1]->I
+Mat Z[10,1]->J
+ClrText
+"FORM:                aX^9+bX^8+cX^7+dX^6+ eX^5+fX^4+gX^3+hX^2+ iX+j"
+"a=":A_
+"b=":B_
+"c=":C_
+"d=":D_
+"e=":E_
+"f=":F_
+"g=":G_
+"h=":H_
+"i=":I_
+"j=":J_
+ViewWindow 0,11,1,0,40,4
+Graph Y=AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J_
+ClrText
+ClrGraph
+Menu " BAUMANN CRYPT SYS","FINISH AND KEEP",1,"FINISH AND PURGE",2
+Lbl 2
+0->A~Z
+a+bi
+Norm1
+ClrText
+ClrMat
+ClrGraph
+ClrList
+AxesOn
+GridOff
+LabelOff
+ViewWindow -10,10,1,-10,10,1
+Lbl 1
+Stop

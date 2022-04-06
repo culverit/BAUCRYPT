@@ -1,0 +1,134 @@
+"PASSCODE"?->\r
+If (\r=ln 2743438)
+Then Goto \r
+Else ClrText:"ACCESS DENIED"
+Stop
+IfEnd
+Lbl \r
+ClrText
+"ACCESS GRANTED"_
+ClrText
+"BRIDGET'S INTERPOLANTPRESS EXE TO START"_
+"#E69ECALCULATING"
+{8,8}->Dim Mat X
+{8,1}->Dim Mat Y
+1->A:A^7->Mat X[1,1]:A^6->Mat X[1,2]:A^5->Mat X[1,3]:A^4->Mat X[1,4]:A^3->Mat X[1,5]:A^2->Mat X[1,6]:A^1->Mat X[1,7]:A^0->Mat X[1,8]
+9->A:A->Mat Y[1,1]
+2->A:A^7->Mat X[2,1]:A^6->Mat X[2,2]:A^5->Mat X[2,3]:A^4->Mat X[2,4]:A^3->Mat X[2,5]:A^2->Mat X[2,6]:A^1->Mat X[2,7]:A^0->Mat X[2,8]
+12->A:A->Mat Y[2,1]
+3->A:A^7->Mat X[3,1]:A^6->Mat X[3,2]:A^5->Mat X[3,3]:A^4->Mat X[3,4]:A^3->Mat X[3,5]:A^2->Mat X[3,6]:A^1->Mat X[3,7]:A^0->Mat X[3,8]
+15->A:A->Mat Y[3,1]
+4->A:A^7->Mat X[4,1]:A^6->Mat X[4,2]:A^5->Mat X[4,3]:A^4->Mat X[4,4]:A^3->Mat X[4,5]:A^2->Mat X[4,6]:A^1->Mat X[4,7]:A^0->Mat X[4,8]
+22->A:A->Mat Y[4,1]
+5->A:A^7->Mat X[5,1]:A^6->Mat X[5,2]:A^5->Mat X[5,3]:A^4->Mat X[5,4]:A^3->Mat X[5,5]:A^2->Mat X[5,6]:A^1->Mat X[5,7]:A^0->Mat X[5,8]
+5->A:A->Mat Y[5,1]
+6->A:A^7->Mat X[6,1]:A^6->Mat X[6,2]:A^5->Mat X[6,3]:A^4->Mat X[6,4]:A^3->Mat X[6,5]:A^2->Mat X[6,6]:A^1->Mat X[6,7]:A^0->Mat X[6,8]
+25->A:A->Mat Y[6,1]
+7->A:A^7->Mat X[7,1]:A^6->Mat X[7,2]:A^5->Mat X[7,3]:A^4->Mat X[7,4]:A^3->Mat X[7,5]:A^2->Mat X[7,6]:A^1->Mat X[7,7]:A^0->Mat X[7,8]
+15->A:A->Mat Y[7,1]
+8->A:A^7->Mat X[8,1]:A^6->Mat X[8,2]:A^5->Mat X[8,3]:A^4->Mat X[8,4]:A^3->Mat X[8,5]:A^2->Mat X[8,6]:A^1->Mat X[8,7]:A^0->Mat X[8,8]
+21->A:A->Mat Y[8,1]
+Mat X^-1*Mat Y->Mat Z
+Mat Z[1,1]->A
+Mat Z[2,1]->B
+Mat Z[3,1]->C
+Mat Z[4,1]->D
+Mat Z[5,1]->E
+Mat Z[6,1]->F
+Mat Z[7,1]->G
+Mat Z[8,1]->H
+"#E69ECALCULATION COMPLETE"_
+ClrText
+"FORM:                aX^7+bX^6+cX^5+dX^4+ eX^3+fX^2+gX+h"
+"a=":A_
+"b=":B_
+"c=":C_
+"d=":D_
+"e=":E_
+"f=":F_
+"g=":G_
+"h=":H_
+ViewWindow 0,9,1,0,40,4
+Graph Y=AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H_
+ClrText
+"SOLVE FOR X [1<=X<=8]":"":"":"":"":""
+Locate 1,3,"X=1->"
+1->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->M
+Int M->Z
+Abs M-Z>0.5=>Z+1->Z
+Locate 6,3,Z
+Z->M
+Locate 1,4,"X=2->"
+2->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->N
+Int N->Z
+Abs N-Z>0.5=>Z+1->Z
+Locate 6,4,Z
+Z->N
+Locate 1,5,"X=3->"
+3->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->O
+Int O->Z
+Abs O-Z>0.5=>Z+1->Z
+Locate 6,5,Z
+Z->O
+Locate 1,6,"X=4->"
+4->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->P
+Int P->Z
+Abs P-Z>0.5=>Z+1->Z
+Locate 6,6,Z
+Z->P
+Locate 11,3,"X=5->"
+5->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->Q
+Int Q->Z
+Abs Q-Z>0.5=>Z+1->Z
+Locate 17,3,Z
+Z->Q
+Locate 11,4,"X=6->"
+6->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->R
+Int R->Z
+Abs R-Z>0.5=>Z+1->Z
+Locate 17,4,Z
+Z->R
+Locate 11,5,"X=7->"
+7->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->S
+Int S->Z
+Abs S-Z>0.5=>Z+1->Z
+Locate 17,5,Z
+Z->S
+Locate 11,6,"X=8->"
+8->X:AX^7+BX^6+CX^5+DX^4+EX^3+FX^2+GX+H->T
+Int T->Z
+Abs T-Z>0.5=>Z+1->Z
+Locate 17,6,Z
+Z->T
+Locate 2,2," "_
+ClrText
+"CONVERT TO LETTERS":"":"":"":"":""
+Locate 1,3,"X=9->"
+Locate 7,3,"I"
+Locate 1,4,"X=12->"
+Locate 7,4,"L"
+Locate 1,5,"X=15->"
+Locate 7,5,"O"
+Locate 1,6,"X=22->"
+Locate 7,6,"V"
+Locate 11,3,"X=5->"
+Locate 18,3,"E"
+Locate 11,4,"X=25->"
+Locate 18,4,"Y"
+Locate 11,5,"X=15->"
+Locate 18,5,"O"
+Locate 11,6,"X=21->"
+Locate 18,6,"U"_
+ClrText
+"WRAP TO ONE LINE AND ADD A SMILEY FACE:"
+" "
+"I LOVE YOU  =]"_
+0->A~Z
+ClrText
+ClrMat
+ClrGraph
+ClrList
+AxesOn
+GridOff
+LabelOff
+ViewWindow -10,10,1,-10,10,1

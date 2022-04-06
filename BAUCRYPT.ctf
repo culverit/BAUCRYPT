@@ -1,0 +1,23 @@
+'Menu is a function  for OS 2.00 and above
+Lbl 0
+Menu " BAUMANN CRYPT SYS","ENCRYPT [10]",1,"DECRYPT [10]",2,"PURGE   [ALL]",3,"EXIT",4
+Lbl 1
+Prog "BIPENCPT"
+Goto 4
+Lbl 2
+Prog "BIPDECPT"
+Goto 4
+Lbl 3
+0->A~Z
+a+bi
+Norm1
+ClrText
+ClrMat
+ClrGraph
+ClrList
+AxesOn
+GridOff
+LabelOff
+ViewWindow -10,10,1,-10,10,1
+Lbl 4
+Stop

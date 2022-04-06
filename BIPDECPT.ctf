@@ -1,0 +1,362 @@
+Menu " BAUMANN CRYPT SYS","USE MEMORY",1,"ENTER VALUES",2
+Lbl 2
+"a="?->A
+"b="?->B
+"c="?->C
+"d="?->D
+"e="?->E
+"f="?->F
+"g="?->G
+"h="?->H
+"i="?->I
+"j="?->J
+Lbl 1
+ClrText
+"SOLVE FOR X [1<=X<=10]":Locate 1,3,"X=1->"
+1->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->M
+Int M->Z
+Abs M-Z>0.5=>Z+1->Z
+Locate 6,3,Z
+Z->M
+Locate 1,4,"X=2->"
+2->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->N
+Int N->Z
+Abs N-Z>0.5=>Z+1->Z
+Locate 6,4,Z
+Z->N
+Locate 1,5,"X=3->"
+3->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->O
+Int O->Z
+Abs O-Z>0.5=>Z+1->Z
+Locate 6,5,Z
+Z->O
+Locate 1,6,"X=4->"
+4->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->P
+Int P->Z
+Abs P-Z>0.5=>Z+1->Z
+Locate 6,6,Z
+Z->P
+Locate 1,7,"X=5->"
+5->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->Q
+Int Q->Z
+Abs Q-Z>0.5=>Z+1->Z
+Locate 6,7,Z
+Z->Q
+Locate 11,3,"X=6->"
+6->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->R
+Int R->Z
+Abs R-Z>0.5=>Z+1->Z
+Locate 17,3,Z
+Z->R
+Locate 11,4,"X=7->"
+7->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->S
+Int S->Z
+Abs S-Z>0.5=>Z+1->Z
+Locate 17,4,Z
+Z->S
+Locate 11,5,"X=8->"
+8->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->T
+Int T->Z
+Abs T-Z>0.5=>Z+1->Z
+Locate 17,5,Z
+Z->T
+Locate 11,6,"X=9->"
+9->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->U
+Int U->Z
+Abs U-Z>0.5=>Z+1->Z
+Locate 17,6,Z
+Z->U
+Locate 11,7,"X=10->"
+10->X:AX^9+BX^8+CX^7+DX^6+EX^5+FX^4+GX^3+HX^2+IX+J->V
+Int V->Z
+Abs V-Z>0.5=>Z+1->Z
+Z->V
+Locate 17,7,Z_
+ClrText
+"CONVERT TO LETTERS"
+Locate 1,3,"X=1->"
+M=1=>Locate 6,3,"A"
+M=2=>Locate 6,3,"B"
+M=3=>Locate 6,3,"C"
+M=4=>Locate 6,3,"D"
+M=5=>Locate 6,3,"E"
+M=6=>Locate 6,3,"F"
+M=7=>Locate 6,3,"G"
+M=8=>Locate 6,3,"H"
+M=9=>Locate 6,3,"I"
+M=10=>Locate 6,3,"J"
+M=11=>Locate 6,3,"K"
+M=12=>Locate 6,3,"L"
+M=13=>Locate 6,3,"M"
+M=14=>Locate 6,3,"N"
+M=15=>Locate 6,3,"O"
+M=16=>Locate 6,3,"P"
+M=17=>Locate 6,3,"Q"
+M=18=>Locate 6,3,"R"
+M=19=>Locate 6,3,"S"
+M=20=>Locate 6,3,"T"
+M=21=>Locate 6,3,"U"
+M=22=>Locate 6,3,"V"
+M=23=>Locate 6,3,"W"
+M=24=>Locate 6,3,"X"
+M=25=>Locate 6,3,"Y"
+M=26=>Locate 6,3,"Z"
+Locate 1,4,"X=2->"
+N=1=>Locate 6,4,"A"
+N=2=>Locate 6,4,"B"
+N=3=>Locate 6,4,"C"
+N=4=>Locate 6,4,"D"
+N=5=>Locate 6,4,"E"
+N=6=>Locate 6,4,"F"
+N=7=>Locate 6,4,"G"
+N=8=>Locate 6,4,"H"
+N=9=>Locate 6,4,"I"
+N=10=>Locate 6,4,"J"
+N=11=>Locate 6,4,"K"
+N=12=>Locate 6,4,"L"
+N=13=>Locate 6,4,"M"
+N=14=>Locate 6,4,"N"
+N=15=>Locate 6,4,"O"
+N=16=>Locate 6,4,"P"
+N=17=>Locate 6,4,"Q"
+N=18=>Locate 6,4,"R"
+N=19=>Locate 6,4,"S"
+N=20=>Locate 6,4,"T"
+N=21=>Locate 6,4,"U"
+N=22=>Locate 6,4,"V"
+N=23=>Locate 6,4,"W"
+N=24=>Locate 6,4,"X"
+N=25=>Locate 6,4,"Y"
+N=26=>Locate 6,4,"Z"
+Locate 1,5,"X=3->"
+O=1=>Locate 6,5,"A"
+O=2=>Locate 6,5,"B"
+O=3=>Locate 6,5,"C"
+O=4=>Locate 6,5,"D"
+O=5=>Locate 6,5,"E"
+O=6=>Locate 6,5,"F"
+O=7=>Locate 6,5,"G"
+O=8=>Locate 6,5,"H"
+O=9=>Locate 6,5,"I"
+O=10=>Locate 6,5,"J"
+O=11=>Locate 6,5,"K"
+O=12=>Locate 6,5,"L"
+O=13=>Locate 6,5,"M"
+O=14=>Locate 6,5,"N"
+O=15=>Locate 6,5,"O"
+O=16=>Locate 6,5,"P"
+O=17=>Locate 6,5,"Q"
+O=18=>Locate 6,5,"R"
+O=19=>Locate 6,5,"S"
+O=20=>Locate 6,5,"T"
+O=21=>Locate 6,5,"U"
+O=22=>Locate 6,5,"V"
+O=23=>Locate 6,5,"W"
+O=24=>Locate 6,5,"X"
+O=25=>Locate 6,5,"Y"
+O=26=>Locate 6,5,"Z"
+Locate 1,6,"X=4->"
+P=1=>Locate 6,6,"A"
+P=2=>Locate 6,6,"B"
+P=3=>Locate 6,6,"C"
+P=4=>Locate 6,6,"D"
+P=5=>Locate 6,6,"E"
+P=6=>Locate 6,6,"F"
+P=7=>Locate 6,6,"G"
+P=8=>Locate 6,6,"H"
+P=9=>Locate 6,6,"I"
+P=10=>Locate 6,6,"J"
+P=11=>Locate 6,6,"K"
+P=12=>Locate 6,6,"L"
+P=13=>Locate 6,6,"M"
+P=14=>Locate 6,6,"N"
+P=15=>Locate 6,6,"O"
+P=16=>Locate 6,6,"P"
+P=17=>Locate 6,6,"Q"
+P=18=>Locate 6,6,"R"
+P=19=>Locate 6,6,"S"
+P=20=>Locate 6,6,"T"
+P=21=>Locate 6,6,"U"
+P=22=>Locate 6,6,"V"
+P=23=>Locate 6,6,"W"
+P=24=>Locate 6,6,"X"
+P=25=>Locate 6,6,"Y"
+P=26=>Locate 6,6,"Z"
+Locate 1,7,"X=5->"
+Q=1=>Locate 6,7,"A"
+Q=2=>Locate 6,7,"B"
+Q=3=>Locate 6,7,"C"
+Q=4=>Locate 6,7,"D"
+Q=5=>Locate 6,7,"E"
+Q=6=>Locate 6,7,"F"
+Q=7=>Locate 6,7,"G"
+Q=8=>Locate 6,7,"H"
+Q=9=>Locate 6,7,"I"
+Q=10=>Locate 6,7,"J"
+Q=11=>Locate 6,7,"K"
+Q=12=>Locate 6,7,"L"
+Q=13=>Locate 6,7,"M"
+Q=14=>Locate 6,7,"N"
+Q=15=>Locate 6,7,"O"
+Q=16=>Locate 6,7,"P"
+Q=17=>Locate 6,7,"Q"
+Q=18=>Locate 6,7,"R"
+Q=19=>Locate 6,7,"S"
+Q=20=>Locate 6,7,"T"
+Q=21=>Locate 6,7,"U"
+Q=22=>Locate 6,7,"V"
+Q=23=>Locate 6,7,"W"
+Q=24=>Locate 6,7,"X"
+Q=25=>Locate 6,7,"Y"
+Q=26=>Locate 6,7,"Z"
+Locate 11,3,"X=6->"
+R=1=>Locate 17,3,"A"
+R=2=>Locate 17,3,"B"
+R=3=>Locate 17,3,"C"
+R=4=>Locate 17,3,"D"
+R=5=>Locate 17,3,"E"
+R=6=>Locate 17,3,"F"
+R=7=>Locate 17,3,"G"
+R=8=>Locate 17,3,"H"
+R=9=>Locate 17,3,"I"
+R=10=>Locate 17,3,"J"
+R=11=>Locate 17,3,"K"
+R=12=>Locate 17,3,"L"
+R=13=>Locate 17,3,"M"
+R=14=>Locate 17,3,"N"
+R=15=>Locate 17,3,"O"
+R=16=>Locate 17,3,"P"
+R=17=>Locate 17,3,"Q"
+R=18=>Locate 17,3,"R"
+R=19=>Locate 17,3,"S"
+R=20=>Locate 17,3,"T"
+R=21=>Locate 17,3,"U"
+R=22=>Locate 17,3,"V"
+R=23=>Locate 17,3,"W"
+R=24=>Locate 17,3,"X"
+R=25=>Locate 17,3,"Y"
+R=26=>Locate 17,3,"Z"
+Locate 11,4,"X=7->"
+S=1=>Locate 17,4,"A"
+S=2=>Locate 17,4,"B"
+S=3=>Locate 17,4,"C"
+S=4=>Locate 17,4,"D"
+S=5=>Locate 17,4,"E"
+S=6=>Locate 17,4,"F"
+S=7=>Locate 17,4,"G"
+S=8=>Locate 17,4,"H"
+S=9=>Locate 17,4,"I"
+S=10=>Locate 17,4,"J"
+S=11=>Locate 17,4,"K"
+S=12=>Locate 17,4,"L"
+S=13=>Locate 17,4,"M"
+S=14=>Locate 17,4,"N"
+S=15=>Locate 17,4,"O"
+S=16=>Locate 17,4,"P"
+S=17=>Locate 17,4,"Q"
+S=18=>Locate 17,4,"R"
+S=19=>Locate 17,4,"S"
+S=20=>Locate 17,4,"T"
+S=21=>Locate 17,4,"U"
+S=22=>Locate 17,4,"V"
+S=23=>Locate 17,4,"W"
+S=24=>Locate 17,4,"X"
+S=25=>Locate 17,4,"Y"
+S=26=>Locate 17,4,"Z"
+Locate 11,5,"X=8->"
+T=1=>Locate 17,5,"A"
+T=2=>Locate 17,5,"B"
+T=3=>Locate 17,5,"C"
+T=4=>Locate 17,5,"D"
+T=5=>Locate 17,5,"E"
+T=6=>Locate 17,5,"F"
+T=7=>Locate 17,5,"G"
+T=8=>Locate 17,5,"H"
+T=9=>Locate 17,5,"I"
+T=10=>Locate 17,5,"J"
+T=11=>Locate 17,5,"K"
+T=12=>Locate 17,5,"L"
+T=13=>Locate 17,5,"M"
+T=14=>Locate 17,5,"N"
+T=15=>Locate 17,5,"O"
+T=16=>Locate 17,5,"P"
+T=17=>Locate 17,5,"Q"
+T=18=>Locate 17,5,"R"
+T=19=>Locate 17,5,"S"
+T=20=>Locate 17,5,"T"
+T=21=>Locate 17,5,"U"
+T=22=>Locate 17,5,"V"
+T=23=>Locate 17,5,"W"
+T=24=>Locate 17,5,"X"
+T=25=>Locate 17,5,"Y"
+T=26=>Locate 17,5,"Z"
+Locate 11,6,"X=9->"
+U=1=>Locate 17,6,"A"
+U=2=>Locate 17,6,"B"
+U=3=>Locate 17,6,"C"
+U=4=>Locate 17,6,"D"
+U=5=>Locate 17,6,"E"
+U=6=>Locate 17,6,"F"
+U=7=>Locate 17,6,"G"
+U=8=>Locate 17,6,"H"
+U=9=>Locate 17,6,"I"
+U=10=>Locate 17,6,"J"
+U=11=>Locate 17,6,"K"
+U=12=>Locate 17,6,"L"
+U=13=>Locate 17,6,"M"
+U=14=>Locate 17,6,"N"
+U=15=>Locate 17,6,"O"
+U=16=>Locate 17,6,"P"
+U=17=>Locate 17,6,"Q"
+U=18=>Locate 17,6,"R"
+U=19=>Locate 17,6,"S"
+U=20=>Locate 17,6,"T"
+U=21=>Locate 17,6,"U"
+U=22=>Locate 17,6,"V"
+U=23=>Locate 17,6,"W"
+U=24=>Locate 17,6,"X"
+U=25=>Locate 17,6,"Y"
+U=26=>Locate 17,6,"Z"
+Locate 11,7,"X=10->"
+V=1=>Locate 17,7,"A"
+V=2=>Locate 17,7,"B"
+V=3=>Locate 17,7,"C"
+V=4=>Locate 17,7,"D"
+V=5=>Locate 17,7,"E"
+V=6=>Locate 17,7,"F"
+V=7=>Locate 17,7,"G"
+V=8=>Locate 17,7,"H"
+V=9=>Locate 17,7,"I"
+V=10=>Locate 17,7,"J"
+V=11=>Locate 17,7,"K"
+V=12=>Locate 17,7,"L"
+V=13=>Locate 17,7,"M"
+V=14=>Locate 17,7,"N"
+V=15=>Locate 17,7,"O"
+V=16=>Locate 17,7,"P"
+V=17=>Locate 17,7,"Q"
+V=18=>Locate 17,7,"R"
+V=19=>Locate 17,7,"S"
+V=20=>Locate 17,7,"T"
+V=21=>Locate 17,7,"U"
+V=22=>Locate 17,7,"V"
+V=23=>Locate 17,7,"W"
+V=24=>Locate 17,7,"X"
+V=25=>Locate 17,7,"Y"
+V=26=>Locate 17,7,"Z"
+Locate 3,3," "_
+ClrText
+Menu " BAUMANN CRYPT SYS","FINISH AND KEEP",8,"FINISH AND PURGE",9
+Lbl 9
+0->A~Z
+a+bi
+Norm1
+ClrMat
+ClrGraph
+ClrList
+AxesOn
+GridOff
+LabelOff
+ViewWindow -10,10,1,-10,10,1
+Lbl 8
+Return
